@@ -1,0 +1,42 @@
+{
+  "dry_run": false,
+  "log_path": "./logs",
+  "aws": {
+    "use_cli_config": true,
+    "cli_profile_name": false,
+    "access_key_id": false,
+    "secret_key": false
+  },
+  "clusters": {
+    "r1": {
+      "region_name": "us-east-1",
+      "vpc_id": "vpc-08c0f5819e6206441",
+      "instance_ids": [
+        "i-05a36477f3a35e43a",
+        "i-09a0f24b09edb7b28",
+        "i-0fc346692a845057e"
+      ]
+    },
+    "r2": {
+      "region_name": "us-east-1",
+      "vpc_id": "vpc-0e926c5eff97379c3",
+      "instance_ids": [
+        "i-0e3f0cda5416164eb",
+        "i-01bc13798d138db69",
+        "i-0736416200fb5691e"
+      ]
+    },
+    "arbiter": {
+      "region_name": "us-east-1",
+      "vpc_id": "vpc-032c23a82e4933b32",
+      "instance_ids": [
+        "i-0bf74bdb221e4ebba"
+      ]
+    }
+  },
+  "domain_names": [
+    "tech-manage.appliance-trial.com",
+    "tech-config.appliance-trial.com",
+    "tech-webtask.appliance-trial.com"
+  ]
+}
